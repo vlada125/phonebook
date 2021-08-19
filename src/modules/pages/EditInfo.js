@@ -124,14 +124,14 @@ export default function EditInfo({ navigation, route })
             color={'black'}
             placeholderTextColor={materialTheme.COLORS.MUTED}
             style={styles.input}
-          // value={data.area.}
+            value={data.area.number_kukaku_code}
           ></Input>
           <Text style={styles.label}>回線提供</Text>
           <Input
             color={'black'}
             placeholderTextColor={materialTheme.COLORS.MUTED}
             style={styles.input}
-          // value={data.area}
+            value={data.area.company}
           ></Input>
           <View style={{ flex: 1, marginBottom: theme.SIZES.BASE / 2 }}>
             <View style={styles.row}>
@@ -149,7 +149,7 @@ export default function EditInfo({ navigation, route })
           </View>
           <View style={{ flex: 1, marginBottom: theme.SIZES.BASE * 2 }}>
             <View style={styles.row}>
-              <Text style={[styles.button1, { backgroundColor: materialTheme.COLORS.DEFAULT }]}>______+++++</Text>
+              <Text style={{ color: 'black', width: theme.SIZES.BASE * 5, fontSize: 17 }}>{data.val3}</Text>
               <Text style={[styles.button1, { backgroundColor: materialTheme.COLORS.SUCCESS }]} onPress={() => plus()}>迷惑電話じゃない！</Text>
               <Text style={[styles.button1, { backgroundColor: materialTheme.COLORS.ERROR }]} onPress={() => minus()}>迷惑電話だ！</Text>
             </View>
