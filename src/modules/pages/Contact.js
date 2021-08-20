@@ -40,7 +40,7 @@ export default function ContactScreen({ navigation })
 
   return (
     <>
-      <Header title={'電話番号検索'} move='App' navigation={navigation}></Header>
+      <Header title={'電話番号検索'} move='Onboarding' navigation={navigation}></Header>
       <Block flex style={styles.home}>
         <Text>検索ワードを入力してください。</Text>
 

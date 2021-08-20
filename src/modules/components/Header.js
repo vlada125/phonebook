@@ -13,12 +13,10 @@ const Header = ({ navigation, title, white, transparent, back, move }) =>
 {
   const handleLeftPress = () =>
   {
-    // return (back ? navigation.goBack() : navigation.openDrawer());
+    console.log(move)
     navigation.navigate(move)
   }
 
-  // const { back, title, white, transparent, navigation } = this.props;
-  // const { routeName } = navigation.state;
   const noShadow = ["Search", "Categories", "Deals", "Pro", "Profile"].includes(title);
   const headerStyles = [
     !noShadow ? styles.shadow : null,
@@ -41,17 +39,6 @@ const Header = ({ navigation, title, white, transparent, back, move }) =>
         ]}
         onLeftPress={handleLeftPress}
       />
-      {/* {
-        navigation.state.name === 'App' ? (
-          <EvilIcons
-            name="search"
-            size={24}
-            color="black"
-            style={styles.search}
-            onPress={() => navigation.navigate('Contact')}
-          />
-        ) : null
-      } */}
 
     </Block>
   );
@@ -69,7 +56,7 @@ const styles = StyleSheet.create({
   navbar: {
     paddingVertical: 0,
     paddingBottom: 0,
-    paddingTop: iPhoneX ? theme.SIZES.BASE : theme.SIZES.BASE,
+    paddingTop: iPhoneX ? theme.SIZES.BASE * 2 : theme.SIZES.BASE,
     zIndex: 5,
     position: 'relative'
   },

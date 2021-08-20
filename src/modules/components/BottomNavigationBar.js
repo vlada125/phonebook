@@ -11,20 +11,6 @@ const Tab = createBottomTabNavigator();
 
 const BottomNavigationBar = ({ navigation }) =>
 {
-  const callLogRoute = () => <CallLogScreen navigation={navigation}></CallLogScreen>;
-
-  const contactRoute = () => <ContactScreen navigation={navigation}></ContactScreen>;
-  const [index, setIndex] = React.useState(0);
-  const [routes] = React.useState([
-    { key: 'callLog', title: 'Call Logs', icon: <MaterialIcon name="access-time" family='Galio' color='green' size={20} />, color: materialTheme.COLORS.ERROR },
-    { key: 'contact', title: 'Contact', icon: 'contacts', color: materialTheme.COLORS.ERROR },
-  ]);
-
-  const renderScene = BottomNavigation.SceneMap({
-    callLog: callLogRoute,
-    contact: contactRoute,
-  });
-
   return (
     // <BottomNavigation
     //   navigationState={{ index, routes }}

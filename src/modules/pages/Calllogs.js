@@ -241,7 +241,7 @@ export default function CallLogScreen({ navigation })
 
   return (
     <>
-      <Header title={'プロフィール編集'} move={'App'} navigation={navigation}></Header>
+      <Header title={'プロフィール編集'} move={'Onboarding'} navigation={navigation}></Header>
       <ScrollView showsVerticalScrollIndicator={false}>
         <Block flex style={styles.home}>
           <View style={{ flex: 1 }}>
