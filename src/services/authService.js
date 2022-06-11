@@ -1,5 +1,4 @@
 import { httpService } from './httpService';
-import axios from 'axios';
 
 export const signUp = ({ login,
   password,
