@@ -45,3 +45,4 @@ or, you can relaese in Android Studio
 #### -Select 'releas' of Build Variants item and check the 'V2(Full APK Signature) and then click the 'finish' button.
 
 You can find the 'app-release.apk' on android/app/release folder.
+
